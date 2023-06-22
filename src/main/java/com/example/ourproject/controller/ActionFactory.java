@@ -1,6 +1,7 @@
 package com.example.ourproject.controller;
 
 import com.example.ourproject.controller.action.Action;
+import com.example.ourproject.controller.action.myInfoAction;
 
 public class ActionFactory {
 
@@ -14,6 +15,10 @@ public class ActionFactory {
 
     public static Action getAction(String command) {
         Action action = null;
+
+        if(command.equals("my_Info")){
+            action = new myInfoAction();
+        }
 
 
 

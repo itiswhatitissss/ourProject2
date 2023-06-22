@@ -24,7 +24,7 @@
             </div>
             <div class="top-nav">
                 <ul>
-                    <li><a href="#">나의정보</a></li>
+                    <li><a href="BoardServlet?command=my_Info">나의정보</a></li>
                     <li><a href="#">주문조회</a></li>
                     <li><a href="#">장바구니</a></li>
                 </ul>
