@@ -19,7 +19,7 @@
         <table>
             <tr>
                 <td>
-                        <img src="$product.image">
+                    <img src="$product.image">
                 <td>
                     <table>
                         <tr align="center">
