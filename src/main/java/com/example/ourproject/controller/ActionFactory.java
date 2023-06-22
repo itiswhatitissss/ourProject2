@@ -18,8 +18,11 @@ public class ActionFactory {
 
         if(command.equals("my_Info")){
             action = new myInfoAction();
+        }else if(command.equals("login")) {
+            action = new loginAction();
+        }else if(command.equals("joinMember")) {
+            action = new joinMemberAction();
         }
-
 
 
         return action;
