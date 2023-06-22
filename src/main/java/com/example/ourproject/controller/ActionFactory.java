@@ -1,6 +1,7 @@
 package com.example.ourproject.controller;
 
 import com.example.ourproject.controller.action.Action;
+import com.example.ourproject.controller.action.loginAction;
 import com.example.ourproject.controller.action.myInfoAction;
 
 public class ActionFactory {

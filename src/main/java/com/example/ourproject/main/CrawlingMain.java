@@ -20,21 +20,16 @@ public class CrawlingMain {
             int k = 1;
             for(int i = 1; i<=1; i++){
                 Document doc = Jsoup.connect("https://www.gmarket.co.kr/n/smilefresh/category?categoryCode=100001003&p="+i).get();
-                Elements poster = doc.select("span.box__itemcard-img img.image__itemcard swiper-lazy swiper-lazy-loaded");
+                Elements poster = doc.select("div.box__itemcard div.box__items-list ul.list__itemcard-slide li.list-item div.box__itemcard-container div.box__itemcard-body div.box__itemcard-inner a.link__itemcard img.image__itemcard");
                 System.out.println(poster);
-
                 String image = null;
 
-//                for(Element imgElement : poster){
-//                    image = imgElement.absUrl("src");
-//                    System.out.println(image);
-//                }
-//                if(!poster.isEmpty()){
-//                    Element firstPoster = poster.first();
-//                    Element imgElement = firstPoster.selectFirst("img");
-//
-//                    image = imgElement.attr("src");
-//                }
+                for (Element imgElement : poster) {
+                    String imageUrl = imgElement.attr("src");
+                    System.out.println(imageUrl);
+                }
+
+
 
             }
 
